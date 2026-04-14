@@ -15,7 +15,7 @@ Your personal shelf of meaningful connections. Browse, tend, and nurture the rel
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 1. **Friendship Tracking** — Every friend has a color-coded status (On Track, Almost Due, Overdue) so you always know who needs attention
 
