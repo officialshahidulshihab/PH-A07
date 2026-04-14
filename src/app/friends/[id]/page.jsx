@@ -3,6 +3,11 @@ import friendDetails from "../../../../public/data.json";
 import { TbBellZ } from "react-icons/tb";
 import { FaBoxArchive } from "react-icons/fa6";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { FiPhoneCall } from "react-icons/fi";
+import { MdOutlineTextsms } from "react-icons/md";
+import { IoVideocamOutline } from "react-icons/io5";
+import { FaHistory } from "react-icons/fa";
+import CallTextVideo from "@/Component/CallTextVideo";
 const FriendDetailsPage = async ({ params }) => {
   const { id } = await params;
 
@@ -18,10 +23,10 @@ const FriendDetailsPage = async ({ params }) => {
         : "bg-[#EF4444]";
 
   return (
-    <div className="flex w-11/12 mx-auto">
-        {/* Left Side */}
+    <div className="flex w-9/12 mx-auto justify-between">
+      {/* Left Side */}
       <div className="mt-10">
-        <div className="bg-base-100 shadow-sm rounded-2xl py-8 px-2 space-y-2.5">
+        <div className="bg-base-100 w-80 shadow-sm rounded-xl py-3 px-2 space-y-2.5">
           <Image
             src={friend.picture}
             width={100}
@@ -43,6 +48,8 @@ const FriendDetailsPage = async ({ params }) => {
               </li>
             ))}
           </div>
+          <p className="text-[12px] font-semibold  text-[#64748B]">{friend.bio}</p>
+          <p className="text-[12px] text-[#64748B]">Email : {friend.email}</p>
         </div>
         <div className="mt-3 space-y-3">
           <div>
@@ -65,10 +72,113 @@ const FriendDetailsPage = async ({ params }) => {
           </div>
         </div>
       </div>
+      {/* Right side */}
+      <div className="mt-10">
+        {/* Right top */}
+        <div className="flex gap-5">
+          <div className="bg-base-100 shadow-sm p-8  text-center w-60">
+            <p className="text-[#1F2937] font-bold text-xl">
+              {friend.days_since_contact}
+            </p>
+            <p>Days Since Contact</p>
+          </div>
+          <div className="bg-base-100 shadow-sm p-8  w-60 text-center">
+            <p className="text-[#1F2937] font-bold text-xl">{friend.goal}</p>
+            <p>Goal (Days)</p>
+          </div>
+          <div className="bg-base-100 shadow-sm p-8  w-60 text-center">
+            <p className="text-[#1F2937] font-bold text-xl">
+              {friend.next_due_date}
+            </p>
+            <p>Next Due</p>
+          </div>
+        </div>
 
-      <div>
+        {/* Right middle top */}
+        <div className="bg-base-100 shadow-sm p-8 mt-11">
+            <div className="flex justify-between items-center">
+                <p className="text-[#244D3F] font-bold text-xl ">
+                    Relationship Goal
+                </p>
+                <button className="btn">Edit</button>
+            </div>
+            <p className="text-[#64748B]">Connect every <span className="font-bold text-[#1F2937]">{friend.goal} days</span></p>
+
+        </div>
+
+        {/* Right middle */}
+       <CallTextVideo friend={friend}></CallTextVideo>
+
+
+        {/* Right end */}
+
+        <div className="bg-base-100 shadow-sm p-5 mt-10">
+            <div className="flex justify-between items-center">
+                <p className="text-[#244D3F] text-xl font-semibold">Recent Interactions</p>
+                <button className="btn flex items-center gap-1"><FaHistory />Full History</button>
+            </div>
+            <div>
+                <div className="flex justify-between mt-3 items-center">
+                    <div className="flex gap-2 items-center ">
+                        <MdOutlineTextsms className="text-3xl" />
+                        <div>
+                            <p>Text</p>
+                            <p className="text-[#64748B]">Asked for career advice</p>
+                        </div>
+                        
+                    </div>
+                    <p>April 2, 2026</p>
+                </div>
+                <div className="divider"></div>
+                <div className="flex justify-between mt-3 items-center">
+                    <div className="flex gap-2 items-center ">
+                        <FiPhoneCall className="text-3xl" />
+                        <div>
+                            <p>Meetup</p>
+                            <p className="text-[#64748B]">Industry conference meetup</p>
+                        </div>
+                        
+                    </div>
+                    <p>April 5, 2026</p>
+                </div>
+                <div className="divider"></div>
+                <div className="flex justify-between mt-3 items-center">
+                    <div className="flex gap-2 items-center ">
+                        <IoVideocamOutline className="text-3xl" />
+                        <div>
+                            <p>Video</p>
+                            <p className="text-[#64748B]">Asked for career advice</p>
+                        </div>
+                        
+                    </div>
+                    <p>April 10, 2026</p>
+                </div>
+                <div className="divider"></div>
+                <div className="flex justify-between mt-3 items-center">
+                    <div className="flex gap-2 items-center ">
+                        <MdOutlineTextsms className="text-3xl" />
+                        <div>
+                            <p>Text</p>
+                            <p className="text-[#64748B]">Asked for career advice</p>
+                        </div>
+                        
+                    </div>
+                    <p>April 12, 2026</p>
+                </div>
+                <div className="divider"></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
 
       </div>
+
+      
     </div>
   );
 };

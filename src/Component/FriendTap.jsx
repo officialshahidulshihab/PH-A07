@@ -26,7 +26,7 @@ const FriendTap = () => {
 
                 </div>
                 <div className='bg-base-100 shadow-sm p-8  w-60 text-center'>
-                    <p className='text-[#1F2937] font-bold text-xl' >{friendsData.length}</p>
+                    <p className='text-[#1F2937] font-bold text-xl' >12</p>
                     <p>Interactions This Month</p>
 
                 </div>
