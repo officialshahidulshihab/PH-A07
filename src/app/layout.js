@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/Component/Shared/NavBar";
 import Footer from "@/Component/Shared/Footer";
 import TimelineProvider from "@/Component/Shared/Context/TimelineProvider";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
          <TimelineProvider>
            {children}
          </TimelineProvider>
-        
+        <Toaster />
         <Footer></Footer>
         </body>
     </html>

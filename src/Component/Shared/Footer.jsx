@@ -11,11 +11,12 @@ const Footer = () => {
         <Image
           src={footerImg}
           alt="footerlogo"
+          
           width={250}
           height={250}
           className="mx-auto"
         ></Image>
-        <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+        <p className="text-[10px] md:text-[16px]">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
         <p>Social Links</p>
         <div className="flex gap-3 justify-center text-black items-center">
             <div>
@@ -29,9 +30,9 @@ const Footer = () => {
             </div>
         </div>
         <div className="divider"></div>
-        <div className="flex justify-between items-center text-[#FAFAFA]">
+        <div className="flex flex-col   md:justify-between md:flex-row items-center text-[#FAFAFA]">
             <p>© 2026 KeenKeeper. All rights reserved.</p>
-            <div className="flex justify-between gap-6 items-center ">
+            <div className="flex flex-col md:flex-row md:justify-between md:gap-6 items-center ">
                 <p>Privacy Policy</p>
                 <p>Terms of Service</p>
                 <p>Cookies</p>

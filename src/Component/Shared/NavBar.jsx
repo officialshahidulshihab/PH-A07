@@ -16,7 +16,7 @@ const NavBar = () => {
   return (
     <div className="bg-base-100 shadow-sm">
     <div className="navbar w-11/12 mx-auto">
-      <div className="flex-1">
+      <div className="md:flex-1">
         <Image src={LogoImg} alt="logo" width={100} height={100}></Image>
       </div>
       <div className="flex-none">

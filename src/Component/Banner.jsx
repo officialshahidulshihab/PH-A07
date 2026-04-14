@@ -21,7 +21,7 @@ const Banner = () => {
            <FriendTap></FriendTap>
            <p className='text-2xl font-bold text-[#1F2937] mb-5'>Your friends</p>
            
-           <div className='grid grid-cols-4 gap-5 mt-5 mb-5'>
+           <div className='grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 mb-5'>
             {
                 friendData.map((friend, ind)=><FriendDisplay key={ind} friend={friend}></FriendDisplay>)
             }

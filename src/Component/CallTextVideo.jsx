@@ -5,6 +5,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { IoVideocamOutline } from "react-icons/io5";
 import { MdOutlineTextsms } from "react-icons/md";
 import TimelineContext from "./Shared/Context/TimlineContext";
+import toast from "react-hot-toast";
 
 const CallTextVideo = ({ friend }) => {
   const { checkCall, setCheckCall } = useContext(TimelineContext);
@@ -12,19 +13,40 @@ const CallTextVideo = ({ friend }) => {
   const { checkVideo, setCheckVideo } = useContext(TimelineContext);
 
   const handleBtnCall = () => {
-    const checked=[...checkCall, friend]
+    const entry={
+      name:friend.name,
+      type:"Call",
+      date: new Date().toLocaleDateString()
+
+    }
+    const checked=[...checkCall, entry]
     setCheckCall(checked);
     localStorage.setItem("Call", JSON.stringify(checked));
+     toast.success(`Call with ${friend.name} logged!`)
   };
   const handleBtnText = () => {
-    const checked=[...checkText, friend]
+    const entry={
+      name:friend.name,
+      type:"Text",
+      date: new Date().toLocaleDateString()
+
+    }
+    const checked=[...checkText, entry]
     setCheckText(checked);
-    localStorage.setItem("text", JSON.stringify(checked));
+    localStorage.setItem("Text", JSON.stringify(checked));
+    toast.success(`Text with ${friend.name} logged!`)
   };
   const handleBtnVideo = () => {
-    const checked=[...checkVideo, friend]
+    const entry={
+      name:friend.name,
+      type:"Video",
+      date: new Date().toLocaleDateString()
+
+    }
+    const checked=[...checkVideo, entry]
     setCheckVideo(checked);
-    localStorage.setItem("video", JSON.stringify(checked));
+    localStorage.setItem("Video", JSON.stringify(checked));
+    toast.success(`Video with ${friend.name} logged!`)
   };
   return (
     <div className="bg-base-100 shadow-sm p-8 mt-11">
@@ -42,7 +64,7 @@ const CallTextVideo = ({ friend }) => {
           <p>Call</p>
         </div>
         <div
-          onClick={() => handleBtnText("Text")}
+          onClick={handleBtnText}
           className="bg-base-100 shadow-sm px-15 py-3 text-center text-xl cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
         >
           <p className="flex justify-center ">
