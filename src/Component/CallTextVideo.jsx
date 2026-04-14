@@ -56,7 +56,7 @@ const CallTextVideo = ({ friend }) => {
       <div className="flex justify-between">
         <div
           onClick={handleBtnCall}
-          className="bg-base-100 shadow-sm px-15 py-3 text-center text-xl cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
+          className="bg-base-100 shadow-sm px-4 md:px-15 py-3 text-center text-xl cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
         >
           <p className="flex justify-center ">
             <FiPhoneCall />
@@ -65,7 +65,7 @@ const CallTextVideo = ({ friend }) => {
         </div>
         <div
           onClick={handleBtnText}
-          className="bg-base-100 shadow-sm px-15 py-3 text-center text-xl cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
+          className="bg-base-100 shadow-sm px-4 md:px-15 py-3 text-center text-xl cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
         >
           <p className="flex justify-center ">
             <MdOutlineTextsms />
@@ -74,7 +74,7 @@ const CallTextVideo = ({ friend }) => {
         </div>
         <div
           onClick={handleBtnVideo}
-          className="bg-base-100 shadow-sm px-15 py-3 text-center text-xl cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
+          className="bg-base-100 shadow-sm px-4 md:px-15 py-3 text-center text-xl cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200"
         >
           <p className="flex justify-center ">
             <IoVideocamOutline />

@@ -23,10 +23,10 @@ const FriendDetailsPage = async ({ params }) => {
         : "bg-[#EF4444]";
 
   return (
-    <div className="flex w-9/12 mx-auto justify-between">
+    <div className="flex flex-col lg:flex-row w-11/12 md:w-9/12 mx-auto gap-10 justify-between">
       {/* Left Side */}
       <div className="mt-10">
-        <div className="bg-base-100 w-80 shadow-sm rounded-xl py-3 px-2 space-y-2.5">
+        <div className="bg-base-100 lg:w-80 shadow-sm rounded-xl py-3 px-2 space-y-2.5">
           <Image
             src={friend.picture}
             width={100}
@@ -75,7 +75,7 @@ const FriendDetailsPage = async ({ params }) => {
       {/* Right side */}
       <div className="mt-10">
         {/* Right top */}
-        <div className="flex gap-5">
+        <div className="flex flex-col md:flex-row gap-5">
           <div className="bg-base-100 shadow-sm p-8  text-center w-60">
             <p className="text-[#1F2937] font-bold text-xl">
               {friend.days_since_contact}
