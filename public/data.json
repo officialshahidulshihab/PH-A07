@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rafiul Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "rafiul.hasan@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend", "roommate"],
+    "bio": "Met in first year at BUET. We used to pull all-nighters together before every exam. He moved to Dhaka after graduation but we still try to catch up over biriyani whenever I visit.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Nadia Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nadia.sultana92@yahoo.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["family", "cousin", "Chittagong"],
+    "bio": "My closest cousin from Agrabad. We grew up playing in the same neighborhood. She is now working at a bank and we meet every Eid without fail. Video calls every week keep us connected.",
+    "goal": 10,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/58.jpg",
+    "email": "tanvir.dev@outlook.com",
+    "days_since_contact": 28,
+    "status": "overdue",
+    "tags": ["work", "tech", "mentor"],
+    "bio": "Senior developer I met at a local tech meetup in Chittagong. He mentored me through my first freelance project and taught me more about clean code than any tutorial ever did. Terrible at replying to messages.",
+    "goal": 21,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 4,
+    "name": "Priya Chakraborty",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "priya.chakraborty@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["college", "study group", "close friend"],
+    "bio": "We met in a competitive programming club. She now works at a tech startup in Kolkata. We still solve LeetCode problems together on weekends over a voice call — our weird but consistent tradition.",
+    "goal": 7,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 5,
+    "name": "Jahangir Alam",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "jahangir.alam1988@gmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["childhood", "neighbor", "old friend"],
+    "bio": "My oldest friend from Raozan. We used to fish at the pond behind his house every summer vacation as kids. Life took us in different directions — he is now a schoolteacher in Comilla — but the bond never fades.",
+    "goal": 30,
+    "next_due_date": "2026-03-15"
+  },
+  {
+    "id": 6,
+    "name": "Samira Khanam",
+    "picture": "https://randomuser.me/api/portraits/women/25.jpg",
+    "email": "samira.khanam@protonmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["college", "project partner", "friend"],
+    "bio": "We built our final year web project together and somehow survived three weeks of zero sleep and constant merge conflicts. Now she works remotely for a Canadian agency. She is living proof that hard work pays off.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 7,
+    "name": "Mehedi Hassan",
+    "picture": "https://randomuser.me/api/portraits/men/77.jpg",
+    "email": "mehedi.hassan.cse@gmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["uni", "classmate", "gamer"],
+    "bio": "Classmate who sits two benches ahead in DSA class. We bond over late-night gaming sessions and debating which sorting algorithm is actually the most elegant. He has strong opinions about merge sort.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 8,
+    "name": "Ayesha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/11.jpg",
+    "email": "ayesha.rahman.bd@gmail.com",
+    "days_since_contact": 19,
+    "status": "almost due",
+    "tags": ["family", "sister", "Dhaka"],
+    "bio": "My elder sister who moved to Dhaka three years ago for her master's degree and stayed for a job at a pharmaceutical company. She sends me care packages and unsolicited life advice in equal measure.",
+    "goal": 21,
+    "next_due_date": "2026-04-14"
+  }
+]
