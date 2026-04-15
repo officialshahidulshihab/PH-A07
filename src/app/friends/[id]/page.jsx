@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "KeenKeeper || FriendDetails",
+  description: "Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.",
+};
+
+
 import Image from "next/image";
 import friendDetails from "../../../../public/data.json";
 import { TbBellZ } from "react-icons/tb";
@@ -22,6 +28,8 @@ const FriendDetailsPage = async ({ params }) => {
         ? "bg-[#244D3F]"
         : "bg-[#EF4444]";
 
+
+        
   return (
     <div className="flex flex-col lg:flex-row w-11/12 md:w-9/12 mx-auto gap-10 justify-between">
       {/* Left Side */}
